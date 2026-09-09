@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CadastroTipoRouteImport } from './routes/cadastro.$tipo'
 import { Route as LoginTipoRouteImport } from './routes/login.$tipo'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CadastroTipoRoute = CadastroTipoRouteImport.update({
+  id: '/cadastro/$tipo',
+  path: '/cadastro/$tipo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginTipoRoute = LoginTipoRouteImport.update({
@@ -25,27 +31,31 @@ const LoginTipoRoute = LoginTipoRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/login/$tipo'
+  fullPaths: '/' | '/cadastro/$tipo' | '/login/$tipo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/login/$tipo'
-  id: '__root__' | '/' | '/login/$tipo'
+  to: '/' | '/cadastro/$tipo' | '/login/$tipo'
+  id: '__root__' | '/' | '/cadastro/$tipo' | '/login/$tipo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CadastroTipoRoute: typeof CadastroTipoRoute
   LoginTipoRoute: typeof LoginTipoRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cadastro/$tipo': {
+      id: '/cadastro/$tipo'
+      path: '/cadastro/$tipo'
+      fullPath: '/cadastro/$tipo'
+      preLoaderRoute: typeof CadastroTipoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login/$tipo': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CadastroTipoRoute: CadastroTipoRoute,
   LoginTipoRoute: LoginTipoRoute,
 }
 export const routeTree = rootRouteImport
