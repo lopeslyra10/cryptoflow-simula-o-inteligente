@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AppClienteRouteImport } from './routes/app.cliente'
+import { Route as AppEmpresaRouteImport } from './routes/app.empresa'
 import { Route as CadastroTipoRouteImport } from './routes/cadastro.$tipo'
 import { Route as LoginTipoRouteImport } from './routes/login.$tipo'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const AppClienteRoute = AppClienteRouteImport.update({
   id: '/app/cliente',
   path: '/app/cliente',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AppEmpresaRoute = AppEmpresaRouteImport.update({
+  id: '/app/empresa',
+  path: '/app/empresa',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CadastroTipoRoute = CadastroTipoRouteImport.update({
@@ -38,12 +44,14 @@ const LoginTipoRoute = LoginTipoRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/app/cliente': typeof AppClienteRoute
+  '/app/empresa': typeof AppEmpresaRoute
   '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/app/cliente': typeof AppClienteRoute
+  '/app/empresa': typeof AppEmpresaRoute
   '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
@@ -51,20 +59,29 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/app/cliente': typeof AppClienteRoute
+  '/app/empresa': typeof AppEmpresaRoute
   '/cadastro/$tipo': typeof CadastroTipoRoute
   '/login/$tipo': typeof LoginTipoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/app/cliente' | '/cadastro/$tipo' | '/login/$tipo'
+  fullPaths:
+    '/' | '/app/cliente' | '/app/empresa' | '/cadastro/$tipo' | '/login/$tipo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/app/cliente' | '/cadastro/$tipo' | '/login/$tipo'
-  id: '__root__' | '/' | '/app/cliente' | '/cadastro/$tipo' | '/login/$tipo'
+  to: '/' | '/app/cliente' | '/app/empresa' | '/cadastro/$tipo' | '/login/$tipo'
+  id:
+    | '__root__'
+    | '/'
+    | '/app/cliente'
+    | '/app/empresa'
+    | '/cadastro/$tipo'
+    | '/login/$tipo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AppClienteRoute: typeof AppClienteRoute
+  AppEmpresaRoute: typeof AppEmpresaRoute
   CadastroTipoRoute: typeof CadastroTipoRoute
   LoginTipoRoute: typeof LoginTipoRoute
 }
@@ -83,6 +100,13 @@ declare module '@tanstack/react-router' {
       path: '/app/cliente'
       fullPath: '/app/cliente'
       preLoaderRoute: typeof AppClienteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/app/empresa': {
+      id: '/app/empresa'
+      path: '/app/empresa'
+      fullPath: '/app/empresa'
+      preLoaderRoute: typeof AppEmpresaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cadastro/$tipo': {
@@ -105,6 +129,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AppClienteRoute: AppClienteRoute,
+  AppEmpresaRoute: AppEmpresaRoute,
   CadastroTipoRoute: CadastroTipoRoute,
   LoginTipoRoute: LoginTipoRoute,
 }
