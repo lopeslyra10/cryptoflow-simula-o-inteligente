@@ -1,7 +1,12 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { Papel } from "./mock";
 
-export type Sessao = { nome: string; email: string; papel: Papel; organizacao?: string };
+export type Sessao = {
+  nome: string;
+  email: string;
+  papel: Papel;
+  organizacao?: string | undefined;
+};
 
 type Ctx = {
   sessao: Sessao | null;
