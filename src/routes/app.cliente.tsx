@@ -28,6 +28,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import {
+  ALERTAS,
   CARTEIRA_INICIAL,
   PEDIDOS,
   PRECO_BTC,
@@ -238,29 +239,66 @@ function PainelCliente() {
       )}
 
       {aba === "historico" && (
-        <div className="grid gap-4 lg:grid-cols-2">
-          <Painel titulo="Rentabilidade acumulada" descricao="Carteira simulada x CDI fictício (%)">
-            <div className="h-72">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={rentabilidade}>
-                  <CartesianGrid stroke="var(--color-border)" vertical={false} />
-                  <XAxis dataKey="data" tickFormatter={dataBR} minTickGap={40} stroke="var(--color-muted-foreground)" fontSize={11} />
-                  <YAxis stroke="var(--color-muted-foreground)" fontSize={11} />
-                  <Tooltip contentStyle={{ background: "var(--color-card)", border: "1px solid var(--color-border)", borderRadius: 12 }} labelFormatter={dataBR} />
-                  <Legend />
-                  <Line type="monotone" dataKey="carteira" name="Carteira" stroke="var(--color-chart-1)" dot={false} strokeWidth={2} />
-                  <Line type="monotone" dataKey="cdi" name="CDI" stroke="var(--color-chart-2)" dot={false} strokeWidth={2} />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          </Painel>
-          <Painel titulo="Indicadores para estudo" descricao="Métricas usuais em Data Science aplicadas a séries de preço">
-            <div className="grid gap-3 sm:grid-cols-2">
-              <StatCard rotulo="Volatilidade 30d" valor="4,82%" detalhe="Desvio-padrão dos retornos diários" />
-              <StatCard rotulo="Índice Sharpe simulado" valor="1,34" detalhe="Retorno excedente / volatilidade" />
-              <StatCard rotulo="Máximo drawdown" valor="-18,7%" detalhe="Maior queda do pico ao vale" tom="baixa" />
-              <StatCard rotulo="Preço médio de compra" valor={brl(carteira.aportes / (carteira.saldoBTC || 1))} detalhe="Custo médio ponderado" />
-            </div>
+        <div className="space-y-4">
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Painel titulo="Rentabilidade acumulada" descricao="Carteira simulada x CDI fictício (%)">
+              <div className="h-72">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={rentabilidade}>
+                    <CartesianGrid stroke="var(--color-border)" vertical={false} />
+                    <XAxis dataKey="data" tickFormatter={dataBR} minTickGap={40} stroke="var(--color-muted-foreground)" fontSize={11} />
+                    <YAxis stroke="var(--color-muted-foreground)" fontSize={11} />
+                    <Tooltip contentStyle={{ background: "var(--color-card)", border: "1px solid var(--color-border)", borderRadius: 12 }} labelFormatter={dataBR} />
+                    <Legend />
+                    <Line type="monotone" dataKey="carteira" name="Carteira" stroke="var(--color-chart-1)" dot={false} strokeWidth={2} />
+                    <Line type="monotone" dataKey="cdi" name="CDI" stroke="var(--color-chart-2)" dot={false} strokeWidth={2} />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </Painel>
+            <Painel titulo="Indicadores para estudo" descricao="Métricas usuais em Data Science aplicadas a séries de preço">
+              <div className="grid gap-3 sm:grid-cols-2">
+                <StatCard rotulo="Volatilidade 30d" valor="4,82%" detalhe="Desvio-padrão dos retornos diários" />
+                <StatCard rotulo="Índice Sharpe simulado" valor="1,34" detalhe="Retorno excedente / volatilidade" />
+                <StatCard rotulo="Máximo drawdown" valor="-18,7%" detalhe="Maior queda do pico ao vale" tom="baixa" />
+                <StatCard rotulo="Preço médio de compra" valor={brl(carteira.aportes / (carteira.saldoBTC || 1))} detalhe="Custo médio ponderado" />
+              </div>
+            </Painel>
+          </div>
+
+          <Painel
+            titulo="Alertas de anomalia"
+            descricao="Movimentos de preço fora do padrão, detectados por z-score sobre os retornos diários"
+          >
+            {ALERTAS.length === 0 ? (
+              <p className="text-sm text-muted-foreground">Nenhum alerta no período simulado.</p>
+            ) : (
+              <ul className="grid gap-2 sm:grid-cols-2">
+                {[...ALERTAS].reverse().slice(0, 8).map((a, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center justify-between gap-3 rounded-lg bg-secondary px-3 py-2 text-sm"
+                  >
+                    <div className="flex items-center gap-2">
+                      {a.tipo === "alta_atipica" ? (
+                        <ArrowUpRight className="size-4 text-success" />
+                      ) : (
+                        <ArrowDownRight className="size-4 text-destructive" />
+                      )}
+                      <div>
+                        <p className="font-medium">
+                          {a.tipo === "alta_atipica" ? "Alta atípica" : "Queda atípica"}
+                        </p>
+                        <p className="text-xs text-muted-foreground">{dataBR(a.data)}</p>
+                      </div>
+                    </div>
+                    <Badge variant={a.tipo === "alta_atipica" ? "secondary" : "destructive"}>
+                      {pct(a.variacaoPct)}
+                    </Badge>
+                  </li>
+                ))}
+              </ul>
+            )}
           </Painel>
         </div>
       )}
