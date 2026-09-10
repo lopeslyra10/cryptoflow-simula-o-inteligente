@@ -18,7 +18,8 @@ import { Painel, StatCard } from "@/components/stat-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { TabelaPedidos } from "./app.cliente";
-import { PEDIDOS, SERIE, brl, dataBR, pct, recebimentosEmpresa } from "@/lib/mock";
+import { PEDIDOS, SERIE, recebimentosEmpresa } from "@/lib/data-source";
+import { brl, dataBR, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/app/empresa")({
   head: () => ({

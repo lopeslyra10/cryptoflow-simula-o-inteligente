@@ -34,11 +34,10 @@ import {
   PRECO_BTC,
   USUARIOS,
   VARIACAO_30D,
-  brl,
   comportamento,
-  pct,
   perfilRisco,
-} from "@/lib/mock";
+} from "@/lib/data-source";
+import { brl, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/app/admin")({
   head: () => ({

@@ -1,0 +1,2926 @@
+{
+  "generatedAt": "2026-09-10T00:52:29.089966+00:00",
+  "meta": {
+    "pipeline": "GBM (preço) + LogisticRegression (risco) + KMeans (segmentação)",
+    "acuraciaModeloRisco": 0.6542
+  },
+  "serie": [
+    {
+      "data": "2026-03-13",
+      "preco": 485099.75,
+      "volume": 283
+    },
+    {
+      "data": "2026-03-14",
+      "preco": 489198.73,
+      "volume": 347
+    },
+    {
+      "data": "2026-03-15",
+      "preco": 497362.15,
+      "volume": 498
+    },
+    {
+      "data": "2026-03-16",
+      "preco": 479975.22,
+      "volume": 639
+    },
+    {
+      "data": "2026-03-17",
+      "preco": 476879.24,
+      "volume": 386
+    },
+    {
+      "data": "2026-03-18",
+      "preco": 473067.07,
+      "volume": 383
+    },
+    {
+      "data": "2026-03-19",
+      "preco": 464170.32,
+      "volume": 441
+    },
+    {
+      "data": "2026-03-20",
+      "preco": 467314.18,
+      "volume": 307
+    },
+    {
+      "data": "2026-03-21",
+      "preco": 465412.75,
+      "volume": 262
+    },
+    {
+      "data": "2026-03-22",
+      "preco": 474006.24,
+      "volume": 485
+    },
+    {
+      "data": "2026-03-23",
+      "preco": 492674.7,
+      "volume": 734
+    },
+    {
+      "data": "2026-03-24",
+      "preco": 491646.09,
+      "volume": 303
+    },
+    {
+      "data": "2026-03-25",
+      "preco": 479222.37,
+      "volume": 600
+    },
+    {
+      "data": "2026-03-26",
+      "preco": 483272.52,
+      "volume": 377
+    },
+    {
+      "data": "2026-03-27",
+      "preco": 478341.6,
+      "volume": 440
+    },
+    {
+      "data": "2026-03-28",
+      "preco": 472690.94,
+      "volume": 392
+    },
+    {
+      "data": "2026-03-29",
+      "preco": 485634.73,
+      "volume": 620
+    },
+    {
+      "data": "2026-03-30",
+      "preco": 488484.87,
+      "volume": 383
+    },
+    {
+      "data": "2026-03-31",
+      "preco": 488376.02,
+      "volume": 331
+    },
+    {
+      "data": "2026-04-01",
+      "preco": 467886.82,
+      "volume": 750
+    },
+    {
+      "data": "2026-04-02",
+      "preco": 503091.11,
+      "volume": 1175
+    },
+    {
+      "data": "2026-04-03",
+      "preco": 504680.65,
+      "volume": 380
+    },
+    {
+      "data": "2026-04-04",
+      "preco": 491514.31,
+      "volume": 534
+    },
+    {
+      "data": "2026-04-05",
+      "preco": 484092.22,
+      "volume": 473
+    },
+    {
+      "data": "2026-04-06",
+      "preco": 475835.15,
+      "volume": 501
+    },
+    {
+      "data": "2026-04-07",
+      "preco": 486731.32,
+      "volume": 567
+    },
+    {
+      "data": "2026-04-08",
+      "preco": 482335.73,
+      "volume": 427
+    },
+    {
+      "data": "2026-04-09",
+      "preco": 473304.57,
+      "volume": 528
+    },
+    {
+      "data": "2026-04-10",
+      "preco": 448053.03,
+      "volume": 881
+    },
+    {
+      "data": "2026-04-11",
+      "preco": 428906.31,
+      "volume": 731
+    },
+    {
+      "data": "2026-04-12",
+      "preco": 431643.89,
+      "volume": 400
+    },
+    {
+      "data": "2026-04-13",
+      "preco": 426167.67,
+      "volume": 390
+    },
+    {
+      "data": "2026-04-14",
+      "preco": 462157.44,
+      "volume": 1212
+    },
+    {
+      "data": "2026-04-15",
+      "preco": 463137.32,
+      "volume": 283
+    },
+    {
+      "data": "2026-04-16",
+      "preco": 460680.19,
+      "volume": 392
+    },
+    {
+      "data": "2026-04-17",
+      "preco": 480229.73,
+      "volume": 721
+    },
+    {
+      "data": "2026-04-18",
+      "preco": 505237.37,
+      "volume": 929
+    },
+    {
+      "data": "2026-04-19",
+      "preco": 520665.75,
+      "volume": 636
+    },
+    {
+      "data": "2026-04-20",
+      "preco": 518539.07,
+      "volume": 276
+    },
+    {
+      "data": "2026-04-21",
+      "preco": 467214.89,
+      "volume": 1477
+    },
+    {
+      "data": "2026-04-22",
+      "preco": 485602.96,
+      "volume": 725
+    },
+    {
+      "data": "2026-04-23",
+      "preco": 502412.16,
+      "volume": 737
+    },
+    {
+      "data": "2026-04-24",
+      "preco": 488770.5,
+      "volume": 617
+    },
+    {
+      "data": "2026-04-25",
+      "preco": 485281.75,
+      "volume": 323
+    },
+    {
+      "data": "2026-04-26",
+      "preco": 491789.42,
+      "volume": 422
+    },
+    {
+      "data": "2026-04-27",
+      "preco": 494660.63,
+      "volume": 369
+    },
+    {
+      "data": "2026-04-28",
+      "preco": 511356.22,
+      "volume": 599
+    },
+    {
+      "data": "2026-04-29",
+      "preco": 475808.04,
+      "volume": 1150
+    },
+    {
+      "data": "2026-04-30",
+      "preco": 471319.22,
+      "volume": 434
+    },
+    {
+      "data": "2026-05-01",
+      "preco": 485218.39,
+      "volume": 635
+    },
+    {
+      "data": "2026-05-02",
+      "preco": 489158.53,
+      "volume": 414
+    },
+    {
+      "data": "2026-05-03",
+      "preco": 472112.92,
+      "volume": 690
+    },
+    {
+      "data": "2026-05-04",
+      "preco": 468109.39,
+      "volume": 438
+    },
+    {
+      "data": "2026-05-05",
+      "preco": 461911.84,
+      "volume": 444
+    },
+    {
+      "data": "2026-05-06",
+      "preco": 463298.74,
+      "volume": 329
+    },
+    {
+      "data": "2026-05-07",
+      "preco": 457784.37,
+      "volume": 430
+    },
+    {
+      "data": "2026-05-08",
+      "preco": 438051.34,
+      "volume": 843
+    },
+    {
+      "data": "2026-05-09",
+      "preco": 425597.17,
+      "volume": 560
+    },
+    {
+      "data": "2026-05-10",
+      "preco": 424733.19,
+      "volume": 240
+    },
+    {
+      "data": "2026-05-11",
+      "preco": 447695.62,
+      "volume": 957
+    },
+    {
+      "data": "2026-05-12",
+      "preco": 472011.08,
+      "volume": 939
+    },
+    {
+      "data": "2026-05-13",
+      "preco": 480464.02,
+      "volume": 520
+    },
+    {
+      "data": "2026-05-14",
+      "preco": 469414.44,
+      "volume": 507
+    },
+    {
+      "data": "2026-05-15",
+      "preco": 467273.56,
+      "volume": 311
+    },
+    {
+      "data": "2026-05-16",
+      "preco": 480915.7,
+      "volume": 545
+    },
+    {
+      "data": "2026-05-17",
+      "preco": 486115.37,
+      "volume": 413
+    },
+    {
+      "data": "2026-05-18",
+      "preco": 497050.04,
+      "volume": 494
+    },
+    {
+      "data": "2026-05-19",
+      "preco": 508802.19,
+      "volume": 529
+    },
+    {
+      "data": "2026-05-20",
+      "preco": 549882.92,
+      "volume": 1249
+    },
+    {
+      "data": "2026-05-21",
+      "preco": 524121.87,
+      "volume": 903
+    },
+    {
+      "data": "2026-05-22",
+      "preco": 549584.92,
+      "volume": 880
+    },
+    {
+      "data": "2026-05-23",
+      "preco": 541469.19,
+      "volume": 462
+    },
+    {
+      "data": "2026-05-24",
+      "preco": 549287.95,
+      "volume": 499
+    },
+    {
+      "data": "2026-05-25",
+      "preco": 581750.72,
+      "volume": 1012
+    },
+    {
+      "data": "2026-05-26",
+      "preco": 580116.97,
+      "volume": 332
+    },
+    {
+      "data": "2026-05-27",
+      "preco": 575475.78,
+      "volume": 378
+    },
+    {
+      "data": "2026-05-28",
+      "preco": 576489.2,
+      "volume": 293
+    },
+    {
+      "data": "2026-05-29",
+      "preco": 585430.18,
+      "volume": 517
+    },
+    {
+      "data": "2026-05-30",
+      "preco": 565294.86,
+      "volume": 630
+    },
+    {
+      "data": "2026-05-31",
+      "preco": 545296.09,
+      "volume": 698
+    },
+    {
+      "data": "2026-06-01",
+      "preco": 551715.36,
+      "volume": 451
+    },
+    {
+      "data": "2026-06-02",
+      "preco": 546557.28,
+      "volume": 449
+    },
+    {
+      "data": "2026-06-03",
+      "preco": 539198.0,
+      "volume": 494
+    },
+    {
+      "data": "2026-06-04",
+      "preco": 538524.13,
+      "volume": 287
+    },
+    {
+      "data": "2026-06-05",
+      "preco": 561764.57,
+      "volume": 777
+    },
+    {
+      "data": "2026-06-06",
+      "preco": 564306.09,
+      "volume": 387
+    },
+    {
+      "data": "2026-06-07",
+      "preco": 553461.67,
+      "volume": 438
+    },
+    {
+      "data": "2026-06-08",
+      "preco": 555186.33,
+      "volume": 324
+    },
+    {
+      "data": "2026-06-09",
+      "preco": 530576.93,
+      "volume": 757
+    },
+    {
+      "data": "2026-06-10",
+      "preco": 528564.66,
+      "volume": 293
+    },
+    {
+      "data": "2026-06-11",
+      "preco": 533766.4,
+      "volume": 429
+    },
+    {
+      "data": "2026-06-12",
+      "preco": 499783.35,
+      "volume": 1074
+    },
+    {
+      "data": "2026-06-13",
+      "preco": 549565.8,
+      "volume": 1339
+    },
+    {
+      "data": "2026-06-14",
+      "preco": 530333.62,
+      "volume": 737
+    },
+    {
+      "data": "2026-06-15",
+      "preco": 535141.25,
+      "volume": 315
+    },
+    {
+      "data": "2026-06-16",
+      "preco": 542841.18,
+      "volume": 490
+    },
+    {
+      "data": "2026-06-17",
+      "preco": 540872.46,
+      "volume": 316
+    },
+    {
+      "data": "2026-06-18",
+      "preco": 519226.48,
+      "volume": 838
+    },
+    {
+      "data": "2026-06-19",
+      "preco": 517438.63,
+      "volume": 272
+    },
+    {
+      "data": "2026-06-20",
+      "preco": 513130.74,
+      "volume": 396
+    },
+    {
+      "data": "2026-06-21",
+      "preco": 487869.79,
+      "volume": 940
+    },
+    {
+      "data": "2026-06-22",
+      "preco": 503418.03,
+      "volume": 594
+    },
+    {
+      "data": "2026-06-23",
+      "preco": 487814.68,
+      "volume": 679
+    },
+    {
+      "data": "2026-06-24",
+      "preco": 491464.79,
+      "volume": 413
+    },
+    {
+      "data": "2026-06-25",
+      "preco": 506756.29,
+      "volume": 636
+    },
+    {
+      "data": "2026-06-26",
+      "preco": 475537.5,
+      "volume": 1000
+    },
+    {
+      "data": "2026-06-27",
+      "preco": 476541.37,
+      "volume": 323
+    },
+    {
+      "data": "2026-06-28",
+      "preco": 454676.82,
+      "volume": 889
+    },
+    {
+      "data": "2026-06-29",
+      "preco": 492475.08,
+      "volume": 1235
+    },
+    {
+      "data": "2026-06-30",
+      "preco": 504447.76,
+      "volume": 520
+    },
+    {
+      "data": "2026-07-01",
+      "preco": 507959.91,
+      "volume": 366
+    },
+    {
+      "data": "2026-07-02",
+      "preco": 509386.51,
+      "volume": 264
+    },
+    {
+      "data": "2026-07-03",
+      "preco": 507570.76,
+      "volume": 341
+    },
+    {
+      "data": "2026-07-04",
+      "preco": 494744.15,
+      "volume": 564
+    },
+    {
+      "data": "2026-07-05",
+      "preco": 504522.42,
+      "volume": 453
+    },
+    {
+      "data": "2026-07-06",
+      "preco": 500634.08,
+      "volume": 357
+    },
+    {
+      "data": "2026-07-07",
+      "preco": 523734.06,
+      "volume": 799
+    },
+    {
+      "data": "2026-07-08",
+      "preco": 547008.85,
+      "volume": 845
+    },
+    {
+      "data": "2026-07-09",
+      "preco": 536581.01,
+      "volume": 434
+    },
+    {
+      "data": "2026-07-10",
+      "preco": 540716.1,
+      "volume": 379
+    },
+    {
+      "data": "2026-07-11",
+      "preco": 520184.94,
+      "volume": 678
+    },
+    {
+      "data": "2026-07-12",
+      "preco": 512543.93,
+      "volume": 508
+    },
+    {
+      "data": "2026-07-13",
+      "preco": 515646.64,
+      "volume": 326
+    },
+    {
+      "data": "2026-07-14",
+      "preco": 505976.54,
+      "volume": 552
+    },
+    {
+      "data": "2026-07-15",
+      "preco": 472603.91,
+      "volume": 1053
+    },
+    {
+      "data": "2026-07-16",
+      "preco": 473129.54,
+      "volume": 352
+    },
+    {
+      "data": "2026-07-17",
+      "preco": 467318.07,
+      "volume": 372
+    },
+    {
+      "data": "2026-07-18",
+      "preco": 426037.1,
+      "volume": 1438
+    },
+    {
+      "data": "2026-07-19",
+      "preco": 418556.5,
+      "volume": 421
+    },
+    {
+      "data": "2026-07-20",
+      "preco": 416931.1,
+      "volume": 358
+    },
+    {
+      "data": "2026-07-21",
+      "preco": 441402.13,
+      "volume": 1026
+    },
+    {
+      "data": "2026-07-22",
+      "preco": 434891.5,
+      "volume": 506
+    },
+    {
+      "data": "2026-07-23",
+      "preco": 431754.32,
+      "volume": 386
+    },
+    {
+      "data": "2026-07-24",
+      "preco": 431716.51,
+      "volume": 318
+    },
+    {
+      "data": "2026-07-25",
+      "preco": 425509.54,
+      "volume": 472
+    },
+    {
+      "data": "2026-07-26",
+      "preco": 469200.66,
+      "volume": 1487
+    },
+    {
+      "data": "2026-07-27",
+      "preco": 474915.05,
+      "volume": 397
+    },
+    {
+      "data": "2026-07-28",
+      "preco": 481799.61,
+      "volume": 411
+    },
+    {
+      "data": "2026-07-29",
+      "preco": 478065.04,
+      "volume": 433
+    },
+    {
+      "data": "2026-07-30",
+      "preco": 491432.7,
+      "volume": 580
+    },
+    {
+      "data": "2026-07-31",
+      "preco": 446797.82,
+      "volume": 1473
+    },
+    {
+      "data": "2026-08-01",
+      "preco": 439696.23,
+      "volume": 394
+    },
+    {
+      "data": "2026-08-02",
+      "preco": 440855.54,
+      "volume": 278
+    },
+    {
+      "data": "2026-08-03",
+      "preco": 454282.21,
+      "volume": 672
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 469273.47,
+      "volume": 713
+    },
+    {
+      "data": "2026-08-05",
+      "preco": 462255.72,
+      "volume": 431
+    },
+    {
+      "data": "2026-08-06",
+      "preco": 435072.97,
+      "volume": 1010
+    },
+    {
+      "data": "2026-08-07",
+      "preco": 456490.87,
+      "volume": 915
+    },
+    {
+      "data": "2026-08-08",
+      "preco": 439693.98,
+      "volume": 714
+    },
+    {
+      "data": "2026-08-09",
+      "preco": 448019.97,
+      "volume": 481
+    },
+    {
+      "data": "2026-08-10",
+      "preco": 469336.52,
+      "volume": 858
+    },
+    {
+      "data": "2026-08-11",
+      "preco": 452605.93,
+      "volume": 674
+    },
+    {
+      "data": "2026-08-12",
+      "preco": 452427.4,
+      "volume": 285
+    },
+    {
+      "data": "2026-08-13",
+      "preco": 479694.44,
+      "volume": 914
+    },
+    {
+      "data": "2026-08-14",
+      "preco": 451779.59,
+      "volume": 926
+    },
+    {
+      "data": "2026-08-15",
+      "preco": 458114.05,
+      "volume": 497
+    },
+    {
+      "data": "2026-08-16",
+      "preco": 454014.47,
+      "volume": 355
+    },
+    {
+      "data": "2026-08-17",
+      "preco": 442203.28,
+      "volume": 665
+    },
+    {
+      "data": "2026-08-18",
+      "preco": 440617.96,
+      "volume": 248
+    },
+    {
+      "data": "2026-08-19",
+      "preco": 421116.81,
+      "volume": 858
+    },
+    {
+      "data": "2026-08-20",
+      "preco": 411758.33,
+      "volume": 617
+    },
+    {
+      "data": "2026-08-21",
+      "preco": 391999.07,
+      "volume": 892
+    },
+    {
+      "data": "2026-08-22",
+      "preco": 407350.27,
+      "volume": 729
+    },
+    {
+      "data": "2026-08-23",
+      "preco": 410501.58,
+      "volume": 361
+    },
+    {
+      "data": "2026-08-24",
+      "preco": 411074.89,
+      "volume": 362
+    },
+    {
+      "data": "2026-08-25",
+      "preco": 444744.1,
+      "volume": 1238
+    },
+    {
+      "data": "2026-08-26",
+      "preco": 448062.59,
+      "volume": 341
+    },
+    {
+      "data": "2026-08-27",
+      "preco": 447674.28,
+      "volume": 311
+    },
+    {
+      "data": "2026-08-28",
+      "preco": 443521.11,
+      "volume": 460
+    },
+    {
+      "data": "2026-08-29",
+      "preco": 447579.67,
+      "volume": 456
+    },
+    {
+      "data": "2026-08-30",
+      "preco": 441879.59,
+      "volume": 456
+    },
+    {
+      "data": "2026-08-31",
+      "preco": 455938.99,
+      "volume": 598
+    },
+    {
+      "data": "2026-09-01",
+      "preco": 465140.37,
+      "volume": 496
+    },
+    {
+      "data": "2026-09-02",
+      "preco": 463407.14,
+      "volume": 380
+    },
+    {
+      "data": "2026-09-03",
+      "preco": 459536.44,
+      "volume": 450
+    },
+    {
+      "data": "2026-09-04",
+      "preco": 476917.09,
+      "volume": 770
+    },
+    {
+      "data": "2026-09-05",
+      "preco": 485264.17,
+      "volume": 439
+    },
+    {
+      "data": "2026-09-06",
+      "preco": 493116.45,
+      "volume": 410
+    },
+    {
+      "data": "2026-09-07",
+      "preco": 461800.94,
+      "volume": 1102
+    },
+    {
+      "data": "2026-09-08",
+      "preco": 449501.15,
+      "volume": 646
+    }
+  ],
+  "precoBtc": 449501.15,
+  "variacao24h": -2.66,
+  "variacao30d": 0.33,
+  "empresas": [
+    {
+      "id": "EMP-01",
+      "nome": "Nordeste Pagamentos",
+      "cnpj": "12.345.678/0001-90",
+      "plano": "Enterprise",
+      "clientes": 417,
+      "status": "Ativa"
+    },
+    {
+      "id": "EMP-02",
+      "nome": "Vértice Capital",
+      "cnpj": "98.765.432/0001-11",
+      "plano": "Pro",
+      "clientes": 177,
+      "status": "Ativa"
+    },
+    {
+      "id": "EMP-03",
+      "nome": "Atlas Fintech",
+      "cnpj": "45.221.908/0001-33",
+      "plano": "Pro",
+      "clientes": 117,
+      "status": "Em análise"
+    },
+    {
+      "id": "EMP-04",
+      "nome": "Litoral Invest",
+      "cnpj": "31.554.022/0001-72",
+      "plano": "Starter",
+      "clientes": 60,
+      "status": "Ativa"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "USR-2100",
+      "nome": "Ana Beatriz Rocha",
+      "email": "ana@exemplo.com.br",
+      "empresa": "Nordeste Pagamentos",
+      "perfil": "Conservador",
+      "patrimonio": 13654.02,
+      "operacoes": 3,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2101",
+      "nome": "Carlos Menezes",
+      "email": "carlos@exemplo.com.br",
+      "empresa": "Vértice Capital",
+      "perfil": "Arrojado",
+      "patrimonio": 31566.56,
+      "operacoes": 3,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2102",
+      "nome": "Marina Duarte",
+      "email": "marina@exemplo.com.br",
+      "empresa": "Atlas Fintech",
+      "perfil": "Moderado",
+      "patrimonio": 78734.41,
+      "operacoes": 3,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2103",
+      "nome": "Rafael Antunes",
+      "email": "rafael@exemplo.com.br",
+      "empresa": "Litoral Invest",
+      "perfil": "Moderado",
+      "patrimonio": 4767.01,
+      "operacoes": 1,
+      "status": "Inativo"
+    },
+    {
+      "id": "USR-2104",
+      "nome": "Juliana Prado",
+      "email": "juliana@exemplo.com.br",
+      "empresa": "Nordeste Pagamentos",
+      "perfil": "Arrojado",
+      "patrimonio": 77710.93,
+      "operacoes": 1,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2105",
+      "nome": "Diego Fontes",
+      "email": "diego@exemplo.com.br",
+      "empresa": "Vértice Capital",
+      "perfil": "Conservador",
+      "patrimonio": 5815.98,
+      "operacoes": 5,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2106",
+      "nome": "Larissa Camargo",
+      "email": "larissa@exemplo.com.br",
+      "empresa": "Atlas Fintech",
+      "perfil": "Conservador",
+      "patrimonio": 14193.65,
+      "operacoes": 5,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2107",
+      "nome": "Bruno Tavares",
+      "email": "bruno@exemplo.com.br",
+      "empresa": "Litoral Invest",
+      "perfil": "Moderado",
+      "patrimonio": 18859.53,
+      "operacoes": 0,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2108",
+      "nome": "Camila Nogueira",
+      "email": "camila@exemplo.com.br",
+      "empresa": "Nordeste Pagamentos",
+      "perfil": "Moderado",
+      "patrimonio": 30663.71,
+      "operacoes": 5,
+      "status": "Inativo"
+    },
+    {
+      "id": "USR-2109",
+      "nome": "Felipe Aragão",
+      "email": "felipe@exemplo.com.br",
+      "empresa": "Vértice Capital",
+      "perfil": "Moderado",
+      "patrimonio": 52179.63,
+      "operacoes": 3,
+      "status": "Inativo"
+    },
+    {
+      "id": "USR-2110",
+      "nome": "Patrícia Lemos",
+      "email": "patricia@exemplo.com.br",
+      "empresa": "Atlas Fintech",
+      "perfil": "Conservador",
+      "patrimonio": 7645.33,
+      "operacoes": 2,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2111",
+      "nome": "Vinícius Barros",
+      "email": "vinicius@exemplo.com.br",
+      "empresa": "Litoral Invest",
+      "perfil": "Moderado",
+      "patrimonio": 43128.03,
+      "operacoes": 4,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2112",
+      "nome": "Renata Siqueira",
+      "email": "renata@exemplo.com.br",
+      "empresa": "Nordeste Pagamentos",
+      "perfil": "Moderado",
+      "patrimonio": 17770.86,
+      "operacoes": 4,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2113",
+      "nome": "Thiago Moura",
+      "email": "thiago@exemplo.com.br",
+      "empresa": "Vértice Capital",
+      "perfil": "Moderado",
+      "patrimonio": 76883.15,
+      "operacoes": 7,
+      "status": "Ativo"
+    },
+    {
+      "id": "USR-2114",
+      "nome": "Aline Peixoto",
+      "email": "aline@exemplo.com.br",
+      "empresa": "Atlas Fintech",
+      "perfil": "Moderado",
+      "patrimonio": 47700.73,
+      "operacoes": 8,
+      "status": "Inativo"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "PED-10460",
+      "data": "2026-09-07",
+      "tipo": "Venda",
+      "quantidade": 0.091356,
+      "precoUnitario": 461800.94,
+      "total": 42188.29,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10524",
+      "data": "2026-09-05",
+      "tipo": "Compra",
+      "quantidade": 0.082057,
+      "precoUnitario": 485264.17,
+      "total": 39819.32,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10487",
+      "data": "2026-09-03",
+      "tipo": "Venda",
+      "quantidade": 0.045987,
+      "precoUnitario": 459536.44,
+      "total": 21132.7,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10534",
+      "data": "2026-09-02",
+      "tipo": "Venda",
+      "quantidade": 0.071037,
+      "precoUnitario": 463407.14,
+      "total": 32919.05,
+      "status": "Liquidado",
+      "cliente": "Bruno Tavares",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10493",
+      "data": "2026-09-01",
+      "tipo": "Compra",
+      "quantidade": 0.03108,
+      "precoUnitario": 465140.37,
+      "total": 14456.56,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10506",
+      "data": "2026-09-01",
+      "tipo": "Compra",
+      "quantidade": 0.087816,
+      "precoUnitario": 465140.37,
+      "total": 40846.77,
+      "status": "Pendente",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10529",
+      "data": "2026-08-31",
+      "tipo": "Compra",
+      "quantidade": 0.07467,
+      "precoUnitario": 455938.99,
+      "total": 34044.96,
+      "status": "Liquidado",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10531",
+      "data": "2026-08-30",
+      "tipo": "Venda",
+      "quantidade": 0.09085,
+      "precoUnitario": 441879.59,
+      "total": 40144.76,
+      "status": "Liquidado",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10478",
+      "data": "2026-08-29",
+      "tipo": "Compra",
+      "quantidade": 0.071947,
+      "precoUnitario": 447579.67,
+      "total": 32202.01,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10509",
+      "data": "2026-08-29",
+      "tipo": "Compra",
+      "quantidade": 0.072806,
+      "precoUnitario": 447579.67,
+      "total": 32586.49,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10490",
+      "data": "2026-08-27",
+      "tipo": "Venda",
+      "quantidade": 0.002488,
+      "precoUnitario": 447674.28,
+      "total": 1113.81,
+      "status": "Liquidado",
+      "cliente": "Juliana Prado",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10466",
+      "data": "2026-08-25",
+      "tipo": "Compra",
+      "quantidade": 0.039766,
+      "precoUnitario": 444744.1,
+      "total": 17685.69,
+      "status": "Pendente",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10513",
+      "data": "2026-08-20",
+      "tipo": "Venda",
+      "quantidade": 0.030577,
+      "precoUnitario": 411758.33,
+      "total": 12590.33,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10451",
+      "data": "2026-08-17",
+      "tipo": "Venda",
+      "quantidade": 0.030029,
+      "precoUnitario": 442203.28,
+      "total": 13278.92,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10472",
+      "data": "2026-08-17",
+      "tipo": "Venda",
+      "quantidade": 0.089444,
+      "precoUnitario": 442203.28,
+      "total": 39552.43,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10515",
+      "data": "2026-08-17",
+      "tipo": "Venda",
+      "quantidade": 0.080036,
+      "precoUnitario": 442203.28,
+      "total": 35392.18,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10496",
+      "data": "2026-08-16",
+      "tipo": "Venda",
+      "quantidade": 0.06117,
+      "precoUnitario": 454014.47,
+      "total": 27772.07,
+      "status": "Liquidado",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10498",
+      "data": "2026-08-16",
+      "tipo": "Venda",
+      "quantidade": 0.034409,
+      "precoUnitario": 454014.47,
+      "total": 15622.18,
+      "status": "Cancelado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10516",
+      "data": "2026-08-14",
+      "tipo": "Venda",
+      "quantidade": 0.036707,
+      "precoUnitario": 451779.59,
+      "total": 16583.47,
+      "status": "Liquidado",
+      "cliente": "Camila Nogueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10527",
+      "data": "2026-08-13",
+      "tipo": "Compra",
+      "quantidade": 0.051249,
+      "precoUnitario": 479694.44,
+      "total": 24583.86,
+      "status": "Cancelado",
+      "cliente": "Rafael Antunes",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10467",
+      "data": "2026-08-11",
+      "tipo": "Compra",
+      "quantidade": 0.019505,
+      "precoUnitario": 452605.93,
+      "total": 8828.08,
+      "status": "Liquidado",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10464",
+      "data": "2026-08-05",
+      "tipo": "Compra",
+      "quantidade": 0.05668,
+      "precoUnitario": 462255.72,
+      "total": 26200.65,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10520",
+      "data": "2026-08-02",
+      "tipo": "Venda",
+      "quantidade": 0.035098,
+      "precoUnitario": 440855.54,
+      "total": 15473.15,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10533",
+      "data": "2026-08-01",
+      "tipo": "Venda",
+      "quantidade": 0.089795,
+      "precoUnitario": 439696.23,
+      "total": 39482.52,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10510",
+      "data": "2026-07-31",
+      "tipo": "Compra",
+      "quantidade": 0.046966,
+      "precoUnitario": 446797.82,
+      "total": 20984.31,
+      "status": "Liquidado",
+      "cliente": "Aline Peixoto",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10457",
+      "data": "2026-07-29",
+      "tipo": "Compra",
+      "quantidade": 0.066642,
+      "precoUnitario": 478065.04,
+      "total": 31859.21,
+      "status": "Liquidado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10522",
+      "data": "2026-07-25",
+      "tipo": "Venda",
+      "quantidade": 0.022308,
+      "precoUnitario": 425509.54,
+      "total": 9492.27,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10476",
+      "data": "2026-07-24",
+      "tipo": "Venda",
+      "quantidade": 0.033004,
+      "precoUnitario": 431716.51,
+      "total": 14248.37,
+      "status": "Liquidado",
+      "cliente": "Rafael Antunes",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10526",
+      "data": "2026-07-21",
+      "tipo": "Venda",
+      "quantidade": 0.032315,
+      "precoUnitario": 441402.13,
+      "total": 14263.91,
+      "status": "Liquidado",
+      "cliente": "Aline Peixoto",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10528",
+      "data": "2026-07-21",
+      "tipo": "Venda",
+      "quantidade": 0.002556,
+      "precoUnitario": 441402.13,
+      "total": 1128.22,
+      "status": "Cancelado",
+      "cliente": "Rafael Antunes",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10455",
+      "data": "2026-07-19",
+      "tipo": "Compra",
+      "quantidade": 0.088654,
+      "precoUnitario": 418556.5,
+      "total": 37106.71,
+      "status": "Cancelado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10517",
+      "data": "2026-07-19",
+      "tipo": "Compra",
+      "quantidade": 0.086771,
+      "precoUnitario": 418556.5,
+      "total": 36318.57,
+      "status": "Liquidado",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10521",
+      "data": "2026-07-19",
+      "tipo": "Compra",
+      "quantidade": 0.024443,
+      "precoUnitario": 418556.5,
+      "total": 10230.78,
+      "status": "Liquidado",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10456",
+      "data": "2026-07-17",
+      "tipo": "Compra",
+      "quantidade": 0.089095,
+      "precoUnitario": 467318.07,
+      "total": 41635.7,
+      "status": "Liquidado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10468",
+      "data": "2026-07-17",
+      "tipo": "Venda",
+      "quantidade": 0.030197,
+      "precoUnitario": 467318.07,
+      "total": 14111.6,
+      "status": "Liquidado",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10507",
+      "data": "2026-07-13",
+      "tipo": "Venda",
+      "quantidade": 0.091307,
+      "precoUnitario": 515646.64,
+      "total": 47082.15,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10532",
+      "data": "2026-07-13",
+      "tipo": "Compra",
+      "quantidade": 0.06672,
+      "precoUnitario": 515646.64,
+      "total": 34403.94,
+      "status": "Pendente",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10525",
+      "data": "2026-07-11",
+      "tipo": "Compra",
+      "quantidade": 0.019859,
+      "precoUnitario": 520184.94,
+      "total": 10330.35,
+      "status": "Liquidado",
+      "cliente": "Juliana Prado",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10504",
+      "data": "2026-07-10",
+      "tipo": "Compra",
+      "quantidade": 0.04854,
+      "precoUnitario": 540716.1,
+      "total": 26246.36,
+      "status": "Cancelado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10503",
+      "data": "2026-07-07",
+      "tipo": "Venda",
+      "quantidade": 0.090456,
+      "precoUnitario": 523734.06,
+      "total": 47374.89,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10530",
+      "data": "2026-07-05",
+      "tipo": "Venda",
+      "quantidade": 0.047441,
+      "precoUnitario": 504522.42,
+      "total": 23935.05,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10452",
+      "data": "2026-07-04",
+      "tipo": "Compra",
+      "quantidade": 0.070426,
+      "precoUnitario": 494744.15,
+      "total": 34842.85,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10465",
+      "data": "2026-06-28",
+      "tipo": "Venda",
+      "quantidade": 0.044661,
+      "precoUnitario": 454676.82,
+      "total": 20306.32,
+      "status": "Liquidado",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10536",
+      "data": "2026-06-28",
+      "tipo": "Compra",
+      "quantidade": 0.053569,
+      "precoUnitario": 454676.82,
+      "total": 24356.58,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10458",
+      "data": "2026-06-25",
+      "tipo": "Venda",
+      "quantidade": 0.076119,
+      "precoUnitario": 506756.29,
+      "total": 38573.78,
+      "status": "Liquidado",
+      "cliente": "Camila Nogueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10495",
+      "data": "2026-06-25",
+      "tipo": "Compra",
+      "quantidade": 0.069415,
+      "precoUnitario": 506756.29,
+      "total": 35176.49,
+      "status": "Liquidado",
+      "cliente": "Juliana Prado",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10511",
+      "data": "2026-06-23",
+      "tipo": "Compra",
+      "quantidade": 0.00946,
+      "precoUnitario": 487814.68,
+      "total": 4614.73,
+      "status": "Liquidado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10489",
+      "data": "2026-06-19",
+      "tipo": "Compra",
+      "quantidade": 0.059555,
+      "precoUnitario": 517438.63,
+      "total": 30816.06,
+      "status": "Liquidado",
+      "cliente": "Camila Nogueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10538",
+      "data": "2026-06-19",
+      "tipo": "Compra",
+      "quantidade": 0.02981,
+      "precoUnitario": 517438.63,
+      "total": 15424.85,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10473",
+      "data": "2026-06-18",
+      "tipo": "Venda",
+      "quantidade": 0.03733,
+      "precoUnitario": 519226.48,
+      "total": 19382.72,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10463",
+      "data": "2026-06-17",
+      "tipo": "Compra",
+      "quantidade": 0.06545,
+      "precoUnitario": 540872.46,
+      "total": 35400.1,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10519",
+      "data": "2026-06-17",
+      "tipo": "Compra",
+      "quantidade": 0.003133,
+      "precoUnitario": 540872.46,
+      "total": 1694.55,
+      "status": "Liquidado",
+      "cliente": "Camila Nogueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10469",
+      "data": "2026-06-16",
+      "tipo": "Compra",
+      "quantidade": 0.030804,
+      "precoUnitario": 542841.18,
+      "total": 16721.68,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10477",
+      "data": "2026-06-12",
+      "tipo": "Venda",
+      "quantidade": 0.031872,
+      "precoUnitario": 499783.35,
+      "total": 15929.09,
+      "status": "Liquidado",
+      "cliente": "Aline Peixoto",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10539",
+      "data": "2026-06-08",
+      "tipo": "Compra",
+      "quantidade": 0.08838,
+      "precoUnitario": 555186.33,
+      "total": 49067.37,
+      "status": "Liquidado",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10479",
+      "data": "2026-06-02",
+      "tipo": "Compra",
+      "quantidade": 0.090712,
+      "precoUnitario": 546557.28,
+      "total": 49579.3,
+      "status": "Cancelado",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10491",
+      "data": "2026-06-01",
+      "tipo": "Venda",
+      "quantidade": 0.033466,
+      "precoUnitario": 551715.36,
+      "total": 18463.71,
+      "status": "Liquidado",
+      "cliente": "Patrícia Lemos",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10518",
+      "data": "2026-06-01",
+      "tipo": "Compra",
+      "quantidade": 0.090027,
+      "precoUnitario": 551715.36,
+      "total": 49669.28,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10480",
+      "data": "2026-05-31",
+      "tipo": "Venda",
+      "quantidade": 0.049844,
+      "precoUnitario": 545296.09,
+      "total": 27179.74,
+      "status": "Liquidado",
+      "cliente": "Aline Peixoto",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10481",
+      "data": "2026-05-27",
+      "tipo": "Venda",
+      "quantidade": 0.023655,
+      "precoUnitario": 575475.78,
+      "total": 13612.88,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10482",
+      "data": "2026-05-26",
+      "tipo": "Compra",
+      "quantidade": 0.032719,
+      "precoUnitario": 580116.97,
+      "total": 18980.85,
+      "status": "Liquidado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10486",
+      "data": "2026-05-26",
+      "tipo": "Compra",
+      "quantidade": 0.035291,
+      "precoUnitario": 580116.97,
+      "total": 20472.91,
+      "status": "Liquidado",
+      "cliente": "Marina Duarte",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10454",
+      "data": "2026-05-25",
+      "tipo": "Venda",
+      "quantidade": 0.033797,
+      "precoUnitario": 581750.72,
+      "total": 19661.43,
+      "status": "Liquidado",
+      "cliente": "Renata Siqueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10462",
+      "data": "2026-05-25",
+      "tipo": "Venda",
+      "quantidade": 0.025611,
+      "precoUnitario": 581750.72,
+      "total": 14899.22,
+      "status": "Liquidado",
+      "cliente": "Renata Siqueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10470",
+      "data": "2026-05-24",
+      "tipo": "Venda",
+      "quantidade": 0.006735,
+      "precoUnitario": 549287.95,
+      "total": 3699.45,
+      "status": "Liquidado",
+      "cliente": "Renata Siqueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10488",
+      "data": "2026-05-24",
+      "tipo": "Compra",
+      "quantidade": 0.079346,
+      "precoUnitario": 549287.95,
+      "total": 43583.8,
+      "status": "Liquidado",
+      "cliente": "Rafael Antunes",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10502",
+      "data": "2026-05-24",
+      "tipo": "Compra",
+      "quantidade": 0.064944,
+      "precoUnitario": 549287.95,
+      "total": 35672.96,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10474",
+      "data": "2026-05-21",
+      "tipo": "Compra",
+      "quantidade": 0.060423,
+      "precoUnitario": 524121.87,
+      "total": 31669.02,
+      "status": "Liquidado",
+      "cliente": "Juliana Prado",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10492",
+      "data": "2026-05-19",
+      "tipo": "Compra",
+      "quantidade": 0.040408,
+      "precoUnitario": 508802.19,
+      "total": 20559.68,
+      "status": "Liquidado",
+      "cliente": "Renata Siqueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10450",
+      "data": "2026-05-14",
+      "tipo": "Venda",
+      "quantidade": 0.062434,
+      "precoUnitario": 469414.44,
+      "total": 29307.42,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10494",
+      "data": "2026-05-14",
+      "tipo": "Venda",
+      "quantidade": 0.059285,
+      "precoUnitario": 469414.44,
+      "total": 27829.24,
+      "status": "Liquidado",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10475",
+      "data": "2026-05-13",
+      "tipo": "Compra",
+      "quantidade": 0.058888,
+      "precoUnitario": 480464.02,
+      "total": 28293.57,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10537",
+      "data": "2026-05-12",
+      "tipo": "Compra",
+      "quantidade": 0.013462,
+      "precoUnitario": 472011.08,
+      "total": 6354.21,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10471",
+      "data": "2026-05-10",
+      "tipo": "Compra",
+      "quantidade": 0.019199,
+      "precoUnitario": 424733.19,
+      "total": 8154.45,
+      "status": "Liquidado",
+      "cliente": "Bruno Tavares",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10461",
+      "data": "2026-05-09",
+      "tipo": "Venda",
+      "quantidade": 0.023381,
+      "precoUnitario": 425597.17,
+      "total": 9950.89,
+      "status": "Liquidado",
+      "cliente": "Rafael Antunes",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10514",
+      "data": "2026-05-09",
+      "tipo": "Venda",
+      "quantidade": 0.053491,
+      "precoUnitario": 425597.17,
+      "total": 22765.62,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10497",
+      "data": "2026-05-05",
+      "tipo": "Compra",
+      "quantidade": 0.071968,
+      "precoUnitario": 461911.84,
+      "total": 33242.87,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10508",
+      "data": "2026-05-04",
+      "tipo": "Venda",
+      "quantidade": 0.052497,
+      "precoUnitario": 468109.39,
+      "total": 24574.34,
+      "status": "Liquidado",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10505",
+      "data": "2026-05-02",
+      "tipo": "Venda",
+      "quantidade": 0.052965,
+      "precoUnitario": 489158.53,
+      "total": 25908.28,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10459",
+      "data": "2026-05-01",
+      "tipo": "Compra",
+      "quantidade": 0.064681,
+      "precoUnitario": 485218.39,
+      "total": 31384.41,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10499",
+      "data": "2026-05-01",
+      "tipo": "Compra",
+      "quantidade": 0.090228,
+      "precoUnitario": 485218.39,
+      "total": 43780.28,
+      "status": "Liquidado",
+      "cliente": "Carlos Menezes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10483",
+      "data": "2026-04-30",
+      "tipo": "Compra",
+      "quantidade": 0.020134,
+      "precoUnitario": 471319.22,
+      "total": 9489.54,
+      "status": "Liquidado",
+      "cliente": "Renata Siqueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10512",
+      "data": "2026-04-30",
+      "tipo": "Venda",
+      "quantidade": 0.078919,
+      "precoUnitario": 471319.22,
+      "total": 37196.04,
+      "status": "Liquidado",
+      "cliente": "Camila Nogueira",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10485",
+      "data": "2026-04-21",
+      "tipo": "Venda",
+      "quantidade": 0.01683,
+      "precoUnitario": 467214.89,
+      "total": 7863.23,
+      "status": "Liquidado",
+      "cliente": "Ana Beatriz Rocha",
+      "empresa": "Nordeste Pagamentos"
+    },
+    {
+      "id": "PED-10535",
+      "data": "2026-04-21",
+      "tipo": "Compra",
+      "quantidade": 0.069005,
+      "precoUnitario": 467214.89,
+      "total": 32240.16,
+      "status": "Liquidado",
+      "cliente": "Diego Fontes",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10453",
+      "data": "2026-04-19",
+      "tipo": "Compra",
+      "quantidade": 0.084377,
+      "precoUnitario": 520665.75,
+      "total": 43932.21,
+      "status": "Liquidado",
+      "cliente": "Thiago Moura",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10500",
+      "data": "2026-04-19",
+      "tipo": "Venda",
+      "quantidade": 0.027201,
+      "precoUnitario": 520665.75,
+      "total": 14162.63,
+      "status": "Liquidado",
+      "cliente": "Vinícius Barros",
+      "empresa": "Litoral Invest"
+    },
+    {
+      "id": "PED-10484",
+      "data": "2026-04-18",
+      "tipo": "Compra",
+      "quantidade": 0.091352,
+      "precoUnitario": 505237.37,
+      "total": 46154.44,
+      "status": "Liquidado",
+      "cliente": "Felipe Aragão",
+      "empresa": "Vértice Capital"
+    },
+    {
+      "id": "PED-10501",
+      "data": "2026-04-14",
+      "tipo": "Compra",
+      "quantidade": 0.029857,
+      "precoUnitario": 462157.44,
+      "total": 13798.63,
+      "status": "Liquidado",
+      "cliente": "Larissa Camargo",
+      "empresa": "Atlas Fintech"
+    },
+    {
+      "id": "PED-10523",
+      "data": "2026-04-14",
+      "tipo": "Compra",
+      "quantidade": 0.071268,
+      "precoUnitario": 462157.44,
+      "total": 32937.04,
+      "status": "Liquidado",
+      "cliente": "Juliana Prado",
+      "empresa": "Nordeste Pagamentos"
+    }
+  ],
+  "carteiraInicial": {
+    "saldoBRL": 42500,
+    "saldoBTC": 0.184213,
+    "aportes": 68000
+  },
+  "rentabilidade": [
+    {
+      "data": "2026-05-12",
+      "carteira": 0.0,
+      "cdi": 0.0
+    },
+    {
+      "data": "2026-05-13",
+      "carteira": 1.79,
+      "cdi": 0.04
+    },
+    {
+      "data": "2026-05-14",
+      "carteira": -0.55,
+      "cdi": 0.09
+    },
+    {
+      "data": "2026-05-15",
+      "carteira": -1.0,
+      "cdi": 0.13
+    },
+    {
+      "data": "2026-05-16",
+      "carteira": 1.89,
+      "cdi": 0.17
+    },
+    {
+      "data": "2026-05-17",
+      "carteira": 2.99,
+      "cdi": 0.21
+    },
+    {
+      "data": "2026-05-18",
+      "carteira": 5.3,
+      "cdi": 0.26
+    },
+    {
+      "data": "2026-05-19",
+      "carteira": 7.79,
+      "cdi": 0.3
+    },
+    {
+      "data": "2026-05-20",
+      "carteira": 16.5,
+      "cdi": 0.34
+    },
+    {
+      "data": "2026-05-21",
+      "carteira": 11.04,
+      "cdi": 0.39
+    },
+    {
+      "data": "2026-05-22",
+      "carteira": 16.43,
+      "cdi": 0.43
+    },
+    {
+      "data": "2026-05-23",
+      "carteira": 14.72,
+      "cdi": 0.47
+    },
+    {
+      "data": "2026-05-24",
+      "carteira": 16.37,
+      "cdi": 0.52
+    },
+    {
+      "data": "2026-05-25",
+      "carteira": 23.25,
+      "cdi": 0.56
+    },
+    {
+      "data": "2026-05-26",
+      "carteira": 22.9,
+      "cdi": 0.6
+    },
+    {
+      "data": "2026-05-27",
+      "carteira": 21.92,
+      "cdi": 0.64
+    },
+    {
+      "data": "2026-05-28",
+      "carteira": 22.13,
+      "cdi": 0.69
+    },
+    {
+      "data": "2026-05-29",
+      "carteira": 24.03,
+      "cdi": 0.73
+    },
+    {
+      "data": "2026-05-30",
+      "carteira": 19.76,
+      "cdi": 0.77
+    },
+    {
+      "data": "2026-05-31",
+      "carteira": 15.53,
+      "cdi": 0.82
+    },
+    {
+      "data": "2026-06-01",
+      "carteira": 16.89,
+      "cdi": 0.86
+    },
+    {
+      "data": "2026-06-02",
+      "carteira": 15.79,
+      "cdi": 0.9
+    },
+    {
+      "data": "2026-06-03",
+      "carteira": 14.23,
+      "cdi": 0.95
+    },
+    {
+      "data": "2026-06-04",
+      "carteira": 14.09,
+      "cdi": 0.99
+    },
+    {
+      "data": "2026-06-05",
+      "carteira": 19.02,
+      "cdi": 1.03
+    },
+    {
+      "data": "2026-06-06",
+      "carteira": 19.55,
+      "cdi": 1.07
+    },
+    {
+      "data": "2026-06-07",
+      "carteira": 17.26,
+      "cdi": 1.12
+    },
+    {
+      "data": "2026-06-08",
+      "carteira": 17.62,
+      "cdi": 1.16
+    },
+    {
+      "data": "2026-06-09",
+      "carteira": 12.41,
+      "cdi": 1.2
+    },
+    {
+      "data": "2026-06-10",
+      "carteira": 11.98,
+      "cdi": 1.25
+    },
+    {
+      "data": "2026-06-11",
+      "carteira": 13.08,
+      "cdi": 1.29
+    },
+    {
+      "data": "2026-06-12",
+      "carteira": 5.88,
+      "cdi": 1.33
+    },
+    {
+      "data": "2026-06-13",
+      "carteira": 16.43,
+      "cdi": 1.38
+    },
+    {
+      "data": "2026-06-14",
+      "carteira": 12.36,
+      "cdi": 1.42
+    },
+    {
+      "data": "2026-06-15",
+      "carteira": 13.37,
+      "cdi": 1.46
+    },
+    {
+      "data": "2026-06-16",
+      "carteira": 15.01,
+      "cdi": 1.5
+    },
+    {
+      "data": "2026-06-17",
+      "carteira": 14.59,
+      "cdi": 1.55
+    },
+    {
+      "data": "2026-06-18",
+      "carteira": 10.0,
+      "cdi": 1.59
+    },
+    {
+      "data": "2026-06-19",
+      "carteira": 9.62,
+      "cdi": 1.63
+    },
+    {
+      "data": "2026-06-20",
+      "carteira": 8.71,
+      "cdi": 1.68
+    },
+    {
+      "data": "2026-06-21",
+      "carteira": 3.36,
+      "cdi": 1.72
+    },
+    {
+      "data": "2026-06-22",
+      "carteira": 6.65,
+      "cdi": 1.76
+    },
+    {
+      "data": "2026-06-23",
+      "carteira": 3.35,
+      "cdi": 1.81
+    },
+    {
+      "data": "2026-06-24",
+      "carteira": 4.12,
+      "cdi": 1.85
+    },
+    {
+      "data": "2026-06-25",
+      "carteira": 7.36,
+      "cdi": 1.89
+    },
+    {
+      "data": "2026-06-26",
+      "carteira": 0.75,
+      "cdi": 1.93
+    },
+    {
+      "data": "2026-06-27",
+      "carteira": 0.96,
+      "cdi": 1.98
+    },
+    {
+      "data": "2026-06-28",
+      "carteira": -3.67,
+      "cdi": 2.02
+    },
+    {
+      "data": "2026-06-29",
+      "carteira": 4.34,
+      "cdi": 2.06
+    },
+    {
+      "data": "2026-06-30",
+      "carteira": 6.87,
+      "cdi": 2.11
+    },
+    {
+      "data": "2026-07-01",
+      "carteira": 7.62,
+      "cdi": 2.15
+    },
+    {
+      "data": "2026-07-02",
+      "carteira": 7.92,
+      "cdi": 2.19
+    },
+    {
+      "data": "2026-07-03",
+      "carteira": 7.53,
+      "cdi": 2.24
+    },
+    {
+      "data": "2026-07-04",
+      "carteira": 4.82,
+      "cdi": 2.28
+    },
+    {
+      "data": "2026-07-05",
+      "carteira": 6.89,
+      "cdi": 2.32
+    },
+    {
+      "data": "2026-07-06",
+      "carteira": 6.06,
+      "cdi": 2.36
+    },
+    {
+      "data": "2026-07-07",
+      "carteira": 10.96,
+      "cdi": 2.41
+    },
+    {
+      "data": "2026-07-08",
+      "carteira": 15.89,
+      "cdi": 2.45
+    },
+    {
+      "data": "2026-07-09",
+      "carteira": 13.68,
+      "cdi": 2.49
+    },
+    {
+      "data": "2026-07-10",
+      "carteira": 14.56,
+      "cdi": 2.54
+    },
+    {
+      "data": "2026-07-11",
+      "carteira": 10.21,
+      "cdi": 2.58
+    },
+    {
+      "data": "2026-07-12",
+      "carteira": 8.59,
+      "cdi": 2.62
+    },
+    {
+      "data": "2026-07-13",
+      "carteira": 9.24,
+      "cdi": 2.67
+    },
+    {
+      "data": "2026-07-14",
+      "carteira": 7.2,
+      "cdi": 2.71
+    },
+    {
+      "data": "2026-07-15",
+      "carteira": 0.13,
+      "cdi": 2.75
+    },
+    {
+      "data": "2026-07-16",
+      "carteira": 0.24,
+      "cdi": 2.79
+    },
+    {
+      "data": "2026-07-17",
+      "carteira": -0.99,
+      "cdi": 2.84
+    },
+    {
+      "data": "2026-07-18",
+      "carteira": -9.74,
+      "cdi": 2.88
+    },
+    {
+      "data": "2026-07-19",
+      "carteira": -11.32,
+      "cdi": 2.92
+    },
+    {
+      "data": "2026-07-20",
+      "carteira": -11.67,
+      "cdi": 2.97
+    },
+    {
+      "data": "2026-07-21",
+      "carteira": -6.48,
+      "cdi": 3.01
+    },
+    {
+      "data": "2026-07-22",
+      "carteira": -7.86,
+      "cdi": 3.05
+    },
+    {
+      "data": "2026-07-23",
+      "carteira": -8.53,
+      "cdi": 3.1
+    },
+    {
+      "data": "2026-07-24",
+      "carteira": -8.54,
+      "cdi": 3.14
+    },
+    {
+      "data": "2026-07-25",
+      "carteira": -9.85,
+      "cdi": 3.18
+    },
+    {
+      "data": "2026-07-26",
+      "carteira": -0.6,
+      "cdi": 3.22
+    },
+    {
+      "data": "2026-07-27",
+      "carteira": 0.62,
+      "cdi": 3.27
+    },
+    {
+      "data": "2026-07-28",
+      "carteira": 2.07,
+      "cdi": 3.31
+    },
+    {
+      "data": "2026-07-29",
+      "carteira": 1.28,
+      "cdi": 3.35
+    },
+    {
+      "data": "2026-07-30",
+      "carteira": 4.11,
+      "cdi": 3.4
+    },
+    {
+      "data": "2026-07-31",
+      "carteira": -5.34,
+      "cdi": 3.44
+    },
+    {
+      "data": "2026-08-01",
+      "carteira": -6.85,
+      "cdi": 3.48
+    },
+    {
+      "data": "2026-08-02",
+      "carteira": -6.6,
+      "cdi": 3.53
+    },
+    {
+      "data": "2026-08-03",
+      "carteira": -3.76,
+      "cdi": 3.57
+    },
+    {
+      "data": "2026-08-04",
+      "carteira": -0.58,
+      "cdi": 3.61
+    },
+    {
+      "data": "2026-08-05",
+      "carteira": -2.07,
+      "cdi": 3.65
+    },
+    {
+      "data": "2026-08-06",
+      "carteira": -7.83,
+      "cdi": 3.7
+    },
+    {
+      "data": "2026-08-07",
+      "carteira": -3.29,
+      "cdi": 3.74
+    },
+    {
+      "data": "2026-08-08",
+      "carteira": -6.85,
+      "cdi": 3.78
+    },
+    {
+      "data": "2026-08-09",
+      "carteira": -5.08,
+      "cdi": 3.83
+    },
+    {
+      "data": "2026-08-10",
+      "carteira": -0.57,
+      "cdi": 3.87
+    },
+    {
+      "data": "2026-08-11",
+      "carteira": -4.11,
+      "cdi": 3.91
+    },
+    {
+      "data": "2026-08-12",
+      "carteira": -4.15,
+      "cdi": 3.96
+    },
+    {
+      "data": "2026-08-13",
+      "carteira": 1.63,
+      "cdi": 4.0
+    },
+    {
+      "data": "2026-08-14",
+      "carteira": -4.29,
+      "cdi": 4.04
+    },
+    {
+      "data": "2026-08-15",
+      "carteira": -2.94,
+      "cdi": 4.08
+    },
+    {
+      "data": "2026-08-16",
+      "carteira": -3.81,
+      "cdi": 4.13
+    },
+    {
+      "data": "2026-08-17",
+      "carteira": -6.32,
+      "cdi": 4.17
+    },
+    {
+      "data": "2026-08-18",
+      "carteira": -6.65,
+      "cdi": 4.21
+    },
+    {
+      "data": "2026-08-19",
+      "carteira": -10.78,
+      "cdi": 4.26
+    },
+    {
+      "data": "2026-08-20",
+      "carteira": -12.77,
+      "cdi": 4.3
+    },
+    {
+      "data": "2026-08-21",
+      "carteira": -16.95,
+      "cdi": 4.34
+    },
+    {
+      "data": "2026-08-22",
+      "carteira": -13.7,
+      "cdi": 4.39
+    },
+    {
+      "data": "2026-08-23",
+      "carteira": -13.03,
+      "cdi": 4.43
+    },
+    {
+      "data": "2026-08-24",
+      "carteira": -12.91,
+      "cdi": 4.47
+    },
+    {
+      "data": "2026-08-25",
+      "carteira": -5.78,
+      "cdi": 4.51
+    },
+    {
+      "data": "2026-08-26",
+      "carteira": -5.07,
+      "cdi": 4.56
+    },
+    {
+      "data": "2026-08-27",
+      "carteira": -5.16,
+      "cdi": 4.6
+    },
+    {
+      "data": "2026-08-28",
+      "carteira": -6.04,
+      "cdi": 4.64
+    },
+    {
+      "data": "2026-08-29",
+      "carteira": -5.18,
+      "cdi": 4.69
+    },
+    {
+      "data": "2026-08-30",
+      "carteira": -6.38,
+      "cdi": 4.73
+    },
+    {
+      "data": "2026-08-31",
+      "carteira": -3.41,
+      "cdi": 4.77
+    },
+    {
+      "data": "2026-09-01",
+      "carteira": -1.46,
+      "cdi": 4.82
+    },
+    {
+      "data": "2026-09-02",
+      "carteira": -1.82,
+      "cdi": 4.86
+    },
+    {
+      "data": "2026-09-03",
+      "carteira": -2.64,
+      "cdi": 4.9
+    },
+    {
+      "data": "2026-09-04",
+      "carteira": 1.04,
+      "cdi": 4.94
+    },
+    {
+      "data": "2026-09-05",
+      "carteira": 2.81,
+      "cdi": 4.99
+    },
+    {
+      "data": "2026-09-06",
+      "carteira": 4.47,
+      "cdi": 5.03
+    },
+    {
+      "data": "2026-09-07",
+      "carteira": -2.16,
+      "cdi": 5.07
+    },
+    {
+      "data": "2026-09-08",
+      "carteira": -4.77,
+      "cdi": 5.12
+    }
+  ],
+  "comportamento": [
+    {
+      "faixa": "18-24",
+      "usuarios": 295,
+      "ticket": 2388,
+      "frequencia": 6.6
+    },
+    {
+      "faixa": "25-34",
+      "usuarios": 238,
+      "ticket": 3666,
+      "frequencia": 6.3
+    },
+    {
+      "faixa": "35-44",
+      "usuarios": 207,
+      "ticket": 4491,
+      "frequencia": 3.7
+    },
+    {
+      "faixa": "45-59",
+      "usuarios": 229,
+      "ticket": 5508,
+      "frequencia": 2.0
+    },
+    {
+      "faixa": "60+",
+      "usuarios": 231,
+      "ticket": 6626,
+      "frequencia": 1.2
+    }
+  ],
+  "perfilRisco": [
+    {
+      "nome": "Conservador",
+      "valor": 38
+    },
+    {
+      "nome": "Moderado",
+      "valor": 41
+    },
+    {
+      "nome": "Arrojado",
+      "valor": 21
+    }
+  ],
+  "recebimentosEmpresa": [
+    {
+      "mes": "S1",
+      "recebido": 119439.96,
+      "taxa": 4059.41
+    },
+    {
+      "mes": "S2",
+      "recebido": 123027.9,
+      "taxa": 4238.03
+    },
+    {
+      "mes": "S3",
+      "recebido": 58777.9,
+      "taxa": 1564.69
+    },
+    {
+      "mes": "S4",
+      "recebido": 104787.39,
+      "taxa": 2804.23
+    },
+    {
+      "mes": "S5",
+      "recebido": 102296.65,
+      "taxa": 3059.99
+    },
+    {
+      "mes": "S6",
+      "recebido": 38004.55,
+      "taxa": 1255.62
+    },
+    {
+      "mes": "S7",
+      "recebido": 107799.19,
+      "taxa": 3498.17
+    },
+    {
+      "mes": "S8",
+      "recebido": 26200.65,
+      "taxa": 926.59
+    },
+    {
+      "mes": "S9",
+      "recebido": 141407.15,
+      "taxa": 3508.8
+    },
+    {
+      "mes": "S10",
+      "recebido": 12590.33,
+      "taxa": 376.36
+    },
+    {
+      "mes": "S11",
+      "recebido": 140092.03,
+      "taxa": 3931.08
+    },
+    {
+      "mes": "S12",
+      "recebido": 150515.92,
+      "taxa": 4699.56
+    }
+  ],
+  "alertas": [
+    {
+      "data": "2026-04-01",
+      "tipo": "queda_atipica",
+      "zScore": -2.63,
+      "variacaoPct": -4.2,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.6)."
+    },
+    {
+      "data": "2026-04-02",
+      "tipo": "alta_atipica",
+      "zScore": 3.6,
+      "variacaoPct": 7.52,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=3.6)."
+    },
+    {
+      "data": "2026-04-14",
+      "tipo": "alta_atipica",
+      "zScore": 2.97,
+      "variacaoPct": 8.44,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=3.0)."
+    },
+    {
+      "data": "2026-04-21",
+      "tipo": "queda_atipica",
+      "zScore": -3.13,
+      "variacaoPct": -9.9,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-3.1)."
+    },
+    {
+      "data": "2026-04-29",
+      "tipo": "queda_atipica",
+      "zScore": -2.09,
+      "variacaoPct": -6.95,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.1)."
+    },
+    {
+      "data": "2026-05-11",
+      "tipo": "alta_atipica",
+      "zScore": 2.34,
+      "variacaoPct": 5.41,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=2.3)."
+    },
+    {
+      "data": "2026-05-20",
+      "tipo": "alta_atipica",
+      "zScore": 2.56,
+      "variacaoPct": 8.07,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=2.6)."
+    },
+    {
+      "data": "2026-06-09",
+      "tipo": "queda_atipica",
+      "zScore": -2.16,
+      "variacaoPct": -4.43,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.2)."
+    },
+    {
+      "data": "2026-06-12",
+      "tipo": "queda_atipica",
+      "zScore": -2.68,
+      "variacaoPct": -6.37,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.7)."
+    },
+    {
+      "data": "2026-06-13",
+      "tipo": "alta_atipica",
+      "zScore": 4.01,
+      "variacaoPct": 9.96,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=4.0)."
+    },
+    {
+      "data": "2026-06-29",
+      "tipo": "alta_atipica",
+      "zScore": 3.09,
+      "variacaoPct": 8.31,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=3.1)."
+    },
+    {
+      "data": "2026-07-15",
+      "tipo": "queda_atipica",
+      "zScore": -2.93,
+      "variacaoPct": -6.6,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.9)."
+    },
+    {
+      "data": "2026-07-18",
+      "tipo": "queda_atipica",
+      "zScore": -2.97,
+      "variacaoPct": -8.83,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-3.0)."
+    },
+    {
+      "data": "2026-07-26",
+      "tipo": "alta_atipica",
+      "zScore": 3.41,
+      "variacaoPct": 10.27,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=3.4)."
+    },
+    {
+      "data": "2026-07-31",
+      "tipo": "queda_atipica",
+      "zScore": -2.4,
+      "variacaoPct": -9.08,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-2.4)."
+    },
+    {
+      "data": "2026-08-25",
+      "tipo": "alta_atipica",
+      "zScore": 2.73,
+      "variacaoPct": 8.19,
+      "mensagem": "Variação positiva fora do padrão dos últimos 14 dias (z=2.7)."
+    },
+    {
+      "data": "2026-09-07",
+      "tipo": "queda_atipica",
+      "zScore": -3.38,
+      "variacaoPct": -6.35,
+      "mensagem": "Variação negativa fora do padrão dos últimos 14 dias (z=-3.4)."
+    }
+  ]
+}

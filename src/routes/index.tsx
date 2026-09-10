@@ -19,7 +19,8 @@ import {
 } from "lucide-react";
 import { AvisoSimulacao, Logo } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
-import { PRECO_BTC, SERIE, VARIACAO_24H, VARIACAO_30D, brl, dataBR, pct } from "@/lib/mock";
+import { PRECO_BTC, SERIE, VARIACAO_24H, VARIACAO_30D } from "@/lib/data-source";
+import { brl, dataBR, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/")({
   head: () => ({

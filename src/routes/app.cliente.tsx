@@ -34,13 +34,9 @@ import {
   SERIE,
   VARIACAO_24H,
   VARIACAO_30D,
-  brl,
-  btc,
-  dataBR,
-  pct,
   rentabilidade,
-  type Pedido,
-} from "@/lib/mock";
+} from "@/lib/data-source";
+import { brl, btc, dataBR, pct, type Pedido } from "@/lib/mock";
 
 export const Route = createFileRoute("/app/cliente")({
   head: () => ({
