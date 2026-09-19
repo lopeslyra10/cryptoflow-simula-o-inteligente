@@ -18,10 +18,21 @@ import { Painel, StatCard } from "@/components/stat-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { TabelaPedidos } from "./app.cliente";
-import { PEDIDOS, SERIE, recebimentosEmpresa } from "@/lib/data-source";
+import { fetchPedidos, fetchSerie, fetchRecebimentosEmpresa } from "@/lib/data-source";
+import { CarregandoAPI, ErroAPI } from "@/components/api-status";
 import { brl, dataBR, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/app/empresa")({
+  loader: async () => {
+    const [pedidos, serie, recebimentosEmpresa] = await Promise.all([
+      fetchPedidos(),
+      fetchSerie(),
+      fetchRecebimentosEmpresa(),
+    ]);
+    return { pedidos, serie, recebimentosEmpresa };
+  },
+  pendingComponent: CarregandoAPI,
+  errorComponent: ErroAPI,
   head: () => ({
     meta: [
       { title: "Painel da empresa | CryptoFlow" },
@@ -52,6 +63,11 @@ const EQUIPE = [
 ];
 
 function PainelEmpresa() {
+  const dados = Route.useLoaderData();
+  const PEDIDOS = dados.pedidos;
+  const SERIE = dados.serie;
+  const recebimentosEmpresa = dados.recebimentosEmpresa;
+
   const [aba, setAba] = useState("recebimentos");
   const pedidos = PEDIDOS.filter((p) => p.empresa === "Nordeste Pagamentos").slice(0, 20);
   const recebido = recebimentosEmpresa.reduce((s, r) => s + r.recebido, 0);

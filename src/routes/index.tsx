@@ -19,10 +19,17 @@ import {
 } from "lucide-react";
 import { AvisoSimulacao, Logo } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
-import { PRECO_BTC, SERIE, VARIACAO_24H, VARIACAO_30D } from "@/lib/data-source";
+import { fetchPreco, fetchSerie } from "@/lib/data-source";
+import { CarregandoAPI, ErroAPI } from "@/components/api-status";
 import { brl, dataBR, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/")({
+  loader: async () => {
+    const [preco, serie] = await Promise.all([fetchPreco(), fetchSerie()]);
+    return { preco, serie };
+  },
+  pendingComponent: CarregandoAPI,
+  errorComponent: ErroAPI,
   head: () => ({
     meta: [
       { title: "CryptoFlow — simulador educacional de investimentos em Bitcoin" },
@@ -56,7 +63,11 @@ const PERFIS = [
 ];
 
 function Landing() {
-  const serie = SERIE.slice(-120);
+  const { preco, serie: serieCompleta } = Route.useLoaderData();
+  const PRECO_BTC = preco.precoBtc;
+  const VARIACAO_24H = preco.variacao24h;
+  const VARIACAO_30D = preco.variacao30d;
+  const serie = serieCompleta.slice(-120);
 
   return (
     <div className="min-h-screen">

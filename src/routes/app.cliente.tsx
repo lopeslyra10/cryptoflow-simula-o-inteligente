@@ -28,18 +28,30 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import {
-  ALERTAS,
-  CARTEIRA_INICIAL,
-  PEDIDOS,
-  PRECO_BTC,
-  SERIE,
-  VARIACAO_24H,
-  VARIACAO_30D,
-  rentabilidade,
+  fetchAlertas,
+  fetchCarteiraInicial,
+  fetchPedidos,
+  fetchPreco,
+  fetchRentabilidade,
+  fetchSerie,
 } from "@/lib/data-source";
 import { brl, btc, dataBR, pct, type Pedido } from "@/lib/mock";
+import { CarregandoAPI, ErroAPI } from "@/components/api-status";
 
 export const Route = createFileRoute("/app/cliente")({
+  loader: async () => {
+    const [preco, serie, pedidos, carteiraInicial, rentabilidade, alertas] = await Promise.all([
+      fetchPreco(),
+      fetchSerie(),
+      fetchPedidos(),
+      fetchCarteiraInicial(),
+      fetchRentabilidade(),
+      fetchAlertas(),
+    ]);
+    return { preco, serie, pedidos, carteiraInicial, rentabilidade, alertas };
+  },
+  pendingComponent: CarregandoAPI,
+  errorComponent: ErroAPI,
   head: () => ({
     meta: [
       { title: "Painel do cliente | CryptoFlow" },
@@ -63,8 +75,17 @@ const ABAS = [
 ];
 
 function PainelCliente() {
+  const dados = Route.useLoaderData();
+  const PRECO_BTC = dados.preco.precoBtc;
+  const VARIACAO_24H = dados.preco.variacao24h;
+  const VARIACAO_30D = dados.preco.variacao30d;
+  const SERIE = dados.serie;
+  const PEDIDOS = dados.pedidos;
+  const rentabilidade = dados.rentabilidade;
+  const ALERTAS = dados.alertas;
+
   const [aba, setAba] = useState("carteira");
-  const [carteira, setCarteira] = useState(CARTEIRA_INICIAL);
+  const [carteira, setCarteira] = useState(dados.carteiraInicial);
   const [meusPedidos, setMeusPedidos] = useState<Pedido[]>(() => PEDIDOS.slice(0, 12));
   const [tipo, setTipo] = useState<"Compra" | "Venda">("Compra");
   const [valor, setValor] = useState("2500");
@@ -72,7 +93,7 @@ function PainelCliente() {
 
   const patrimonio = carteira.saldoBRL + carteira.saldoBTC * PRECO_BTC;
   const lucro = patrimonio - carteira.aportes;
-  const serie90 = useMemo(() => SERIE.slice(-90), []);
+  const serie90 = useMemo(() => SERIE.slice(-90), [SERIE]);
 
   function executar() {
     const v = Number(valor.replace(",", "."));

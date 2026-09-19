@@ -29,17 +29,30 @@ import {
 } from "@/components/ui/table";
 import { TabelaPedidos } from "./app.cliente";
 import {
-  EMPRESAS,
-  PEDIDOS,
-  PRECO_BTC,
-  USUARIOS,
-  VARIACAO_30D,
-  comportamento,
-  perfilRisco,
+  fetchComportamento,
+  fetchEmpresas,
+  fetchPedidos,
+  fetchPerfilRisco,
+  fetchPreco,
+  fetchUsuarios,
 } from "@/lib/data-source";
+import { CarregandoAPI, ErroAPI } from "@/components/api-status";
 import { brl, pct } from "@/lib/mock";
 
 export const Route = createFileRoute("/app/admin")({
+  loader: async () => {
+    const [preco, empresas, usuarios, pedidos, comportamento, perfilRisco] = await Promise.all([
+      fetchPreco(),
+      fetchEmpresas(),
+      fetchUsuarios(),
+      fetchPedidos(),
+      fetchComportamento(),
+      fetchPerfilRisco(),
+    ]);
+    return { preco, empresas, usuarios, pedidos, comportamento, perfilRisco };
+  },
+  pendingComponent: CarregandoAPI,
+  errorComponent: ErroAPI,
   head: () => ({
     meta: [
       { title: "Painel administrativo | CryptoFlow" },
@@ -66,6 +79,15 @@ const ABAS = [
 const CORES = ["var(--color-chart-1)", "var(--color-chart-2)", "var(--color-chart-3)"];
 
 function PainelAdmin() {
+  const dados = Route.useLoaderData();
+  const PRECO_BTC = dados.preco.precoBtc;
+  const VARIACAO_30D = dados.preco.variacao30d;
+  const EMPRESAS = dados.empresas;
+  const USUARIOS = dados.usuarios;
+  const PEDIDOS = dados.pedidos;
+  const comportamento = dados.comportamento;
+  const perfilRisco = dados.perfilRisco;
+
   const [aba, setAba] = useState("indicadores");
   const volume = PEDIDOS.reduce((s, p) => s + p.total, 0);
   const pendentes = PEDIDOS.filter((p) => p.status === "Pendente").length;

@@ -1,48 +1,83 @@
 // Fonte única dos dados "reais" do CryptoFlow.
 //
-// Hoje (Fase 1): lê um JSON gerado em lote pelo pipeline de Data Science em
-// Python (ver /cryptoflow-ds no repositório, fora de src/). Roda-se o script,
-// o arquivo abaixo é regravado, o dashboard reflete o novo snapshot.
+// Fase 5 (API ao vivo): cada função abaixo busca de um endpoint da API
+// FastAPI (ver /cryptoflow-ds/cryptoflow_ds/api.py), que por sua vez lê do
+// mesmo banco SQLite que o pipeline Python popula. Antes disso (Fase 1),
+// este arquivo importava um snapshot estático em
+// src/data/cryptoflow-data.json — esse arquivo pode continuar existindo
+// no repositório como referência/fallback offline, mas não é mais
+// importado aqui.
 //
-// Amanhã (Fase 2 — API ao vivo): troca-se o bloco de import estático por um
-// fetch para a API (ver cryptoflow-ds/cryptoflow_ds/api_preview.py), dentro
-// de uma server function do TanStack Start para não expor a URL da API no
-// bundle do cliente. Os nomes exportados abaixo (SERIE, PRECO_BTC, USUARIOS
-// etc.) continuam os mesmos — nenhuma rota ou componente precisa mudar.
-//
-// Tipos (Papel, Pedido, PontoPreco) e os helpers de formatação (brl, btc,
-// pct, dataBR) continuam vindo de "./mock" — só os DADOS mudaram de fonte.
+// Cada rota chama as funções que precisa dentro do seu `loader` do
+// TanStack Router e lê o resultado via `Route.useLoaderData()` — não tem
+// mais um valor pronto no escopo do módulo, porque agora é uma
+// requisição de rede, não um import estático resolvido em build time.
 
-import raw from "@/data/cryptoflow-data.json";
 import type { Pedido } from "./mock";
 
-const data = raw;
+// Ajustável via variável de ambiente (arquivo .env na raiz do projeto:
+// VITE_API_BASE_URL=http://localhost:8000) se a API rodar em outro
+// endereço/porta. Sem isso, usa o padrão local.
+const API_BASE = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
 
-export const SERIE = data.serie;
-export const PRECO_BTC = data.precoBtc;
-export const VARIACAO_24H = data.variacao24h;
-export const VARIACAO_30D = data.variacao30d;
+async function fetchJSON<T>(caminho: string): Promise<T> {
+  const resposta = await fetch(`${API_BASE}${caminho}`);
+  if (!resposta.ok) {
+    throw new Error(`API respondeu ${resposta.status} em ${caminho}`);
+  }
+  return resposta.json() as Promise<T>;
+}
 
-export const EMPRESAS = data.empresas;
-export const USUARIOS = data.usuarios;
+// --- Tipos (espelham cryptoflow_ds/schemas.py) --------------------------
 
-// `status` e `tipo` em Pedido são union types literais ("Compra" | "Venda"...);
-// o import de JSON infere `string` para eles. O pipeline Python garante que só
-// os valores válidos são emitidos (ver cryptoflow_ds/schemas.py), então o cast
-// aqui é seguro — é a mesma garantia que um endpoint tipado com Pydantic daria.
-export const PEDIDOS = data.pedidos as Pedido[];
+export type PontoPreco = { data: string; preco: number; volume: number };
+export type PrecoResumo = { precoBtc: number; variacao24h: number; variacao30d: number };
 
-export const CARTEIRA_INICIAL = data.carteiraInicial;
-export const rentabilidade = data.rentabilidade;
-export const comportamento = data.comportamento;
-export const perfilRisco = data.perfilRisco;
-export const recebimentosEmpresa = data.recebimentosEmpresa;
+export type Usuario = {
+  id: string;
+  nome: string;
+  email: string;
+  empresa: string;
+  perfil: "Conservador" | "Moderado" | "Arrojado";
+  patrimonio: number;
+  operacoes: number;
+  status: "Ativo" | "Inativo";
+  explicacao: string;
+};
 
-// Novo: ainda não consumido por nenhuma tela, mas já disponível para quando
-// o dashboard ganhar um card de "alertas simulados" (a landing page já promete
-// isso). Gerado por detecção de anomalias (z-score) em cryptoflow_ds/alerts.py.
-export const ALERTAS = data.alertas;
+export type Empresa = {
+  id: string;
+  nome: string;
+  cnpj: string;
+  plano: "Starter" | "Pro" | "Enterprise";
+  clientes: number;
+  status: "Ativa" | "Em análise";
+};
 
-// Metadados úteis para depuração ou para exibir "dados gerados em..." na UI.
-export const META = data.meta;
-export const GERADO_EM = data.generatedAt;
+export type Carteira = { saldoBRL: number; saldoBTC: number; aportes: number };
+export type RentabilidadePonto = { data: string; carteira: number; cdi: number };
+export type ComportamentoFaixa = { faixa: string; usuarios: number; ticket: number; frequencia: number };
+export type PerfilRiscoItem = { nome: string; valor: number };
+export type RecebimentoSemana = { mes: string; recebido: number; taxa: number };
+
+export type Alerta = {
+  data: string;
+  tipo: "alta_atipica" | "queda_atipica";
+  zScore: number;
+  variacaoPct: number;
+  mensagem: string;
+};
+
+// --- Um fetcher por endpoint ---------------------------------------------
+
+export const fetchPreco = () => fetchJSON<PrecoResumo>("/api/preco");
+export const fetchSerie = () => fetchJSON<PontoPreco[]>("/api/serie");
+export const fetchAlertas = () => fetchJSON<Alerta[]>("/api/alertas");
+export const fetchUsuarios = () => fetchJSON<Usuario[]>("/api/usuarios");
+export const fetchEmpresas = () => fetchJSON<Empresa[]>("/api/empresas");
+export const fetchPedidos = () => fetchJSON<Pedido[]>("/api/pedidos");
+export const fetchCarteiraInicial = () => fetchJSON<Carteira>("/api/carteira-inicial");
+export const fetchRentabilidade = () => fetchJSON<RentabilidadePonto[]>("/api/rentabilidade");
+export const fetchComportamento = () => fetchJSON<ComportamentoFaixa[]>("/api/comportamento");
+export const fetchPerfilRisco = () => fetchJSON<PerfilRiscoItem[]>("/api/perfil-risco");
+export const fetchRecebimentosEmpresa = () => fetchJSON<RecebimentoSemana[]>("/api/recebimentos-empresa");

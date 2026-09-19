@@ -1,5 +1,12 @@
 # CryptoFlow: Simulação Inteligente
 
+## Sobre o desenvolvimento
+
+Este projeto foi desenvolvido com apoio de IA (Claude, Anthropic) como
+ferramenta de trabalho — no desenvolvimento de UI/UX do front-end, em
+commits e no diagnóstico de erros (integração com a API, CORS, ambiente
+Windows). As decisões de produto e o trabalho de curso são do autor.
+
 Crie um modelo completo de app fintech educacional chamado CryptoFlow, para simulação de investimentos em Bitcoin com dados fictícios. Público B2C e B2B. Inclua uma landing page profissional e responsiva; login e cadastro separados para cliente e empresa; dashboards distintos para cliente (carteira simulada, cotação BTC, compra/venda simulada, pedidos e histórico), empresa (recebimentos, pedidos, relatórios e equipe) e administrador (gestão de usuários/empresas, pedidos e indicadores consolidados). Inclua visualizações e métricas úteis para estudo de Data Science, como tendências de preço, rentabilidade e comportamento de usuários. Use textos em português do Brasil, identidade visual moderna e confiável, e deixe claro que é um ambiente de simulação, sem operações reais.
 
 This project was built with [Lovable](https://lovable.dev).
